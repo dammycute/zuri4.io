@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6, button{
+    font-family: poppins;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: var(--neutral-color2);
+}
+p{
+    line-height: 2rem;
+    font-size: 18px;
+}
+
+body{
+    font-family: open sans;
+}
+
+:root{
+    --primary-color: hsl(322, 100%, 66%);
+    --primary-fade: hsl(322, 100%, 73%);
+    --neutral-color1: hsl(193, 100%, 96%);
+    --neutral-color2: hsl(192, 100%, 9%);
+    --neutral-color3: hsl(208, 11%, 55%);
+}
+
+button{
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.try:hover{
+    color: var(--neutral-color3);
+}
+
+.get{
+    padding: 12px 40px;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.get:hover{
+    background-color: var(--primary-fade);
+    transition: 0.5s ease-in-out;
+}
+
+header{
+    background-image: linear-gradient(hsla(192, 77%, 95%, 0.63), hsla(192, 77%, 95%, 0.63)), url('/images/bg-hero-desktop.svg');
+    background-size: conver;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+nav button{
+    background-color: #fff;
+    color: var(--neutral-color2);
+    padding: 10px 50px;
+    filter: drop-shadow(2px 2px 3px rgb(218, 218, 218));
+}
+
+.logo img{
+    width: 80px;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.c-flex{
+    display: flex;
+    row-gap: 2rem;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.f-flex{
+    display: flex;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hero-text{
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero-text p{
+    padding: 1rem 0;
+}
+
+.box{
+    margin-top: 3rem;
+}
+
+.text{
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+ img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.box{
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 5px rgb(224, 224, 224));
+    background-color: #fff;
+}
+
+.ready{
+    width: 60%;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 1rem auto -5rem auto;
+    padding: 2rem;
+    text-align: center;
+    padding-bottom: -5rem;
+    z-index: 2rem;
+    filter: drop-shadow(2px 2px 4px rgb(146, 146, 146));
+    
+}
+
+.ready button{
+    width: 100%;
+    max-width: 20rem;
+}
+
+.ready h2{
+    padding-bottom: 1.3rem;
+}
+
+footer{
+    background-color: var(--neutral-color2);
+    padding: 10rem 0;
+    padding-bottom: 2rem;
+    color: #fff;
+}
+
+footer img{
+    width: 100%;
+    max-width: 150px;
+}
+
+.flex{
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    align-items:flex-start;
+    column-gap: 2rem;
+    margin: 1.3rem;
+    
+}
+
+.boot{
+    display: flex;
+    column-gap: 2rem;
+    align-items: baseline;
+}
+
+.bi{
+    font-size: 17px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.bi:hover{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: 0.5s ease-in-out;
+}
+
+.flex img{
+    width: 100%;
+    max-width: 18px;
+}
+
+.p{
+    float: right;
+    padding-right: 2rem;
+    /* padding-top: 1rem; */
+}
+
+.a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.6s ease-out;
+}
+
+
+@media screen and (max-width: 400px){
+    header{
+        background-image: url('/images/bg-hero-mobile.svg');
+        background-size: cover;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .boot{
+        justify-content: center;
+    }
+
+    
+
+    .flow{
+        padding: 3rem 1rem;
+    }
+
+    .ready{
+        width: 90%;
+        text-align: center;
+    }
+
+    .f-flex{
+        flex-direction: column;
+        padding-left: 2rem;
+        font-size: 22px;
+        align-items: baseline;
+    }
+
+    footer .p{
+        text-align: center;
+    }
+}
